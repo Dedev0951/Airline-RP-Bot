@@ -1,1 +1,28 @@
+---Discord Airline Bot---
 
+General:
+This tool should help airlines to make RP even more fun.
+Functions:
+-Airline Overview
+-Economy System
+-Flight Booking
+-Airline Managment
+-Flight Hosting
+-Upgrades and Customization
+-Collaborative Features
+-Real-time Events
+
+Functionality:
+-Airline Overview:
+--Command: "/ARPB AirlineOverview"
+--Function: Show an embed with formated text such as Name, Logo, Slogan.
+--2.Command: "/ARPB Airline [Airline]"
+--2.Function: Show an embed with the airline name as title and show informations like logo, slogan, history, current fleet size, number of routes and destinatinations.
+-Flight Booking:
+--Command: "/book [flightnumber] [economy/first/premium/etc.] [ingamename]"
+--Function: Creating new passenger on passenger list with informations like: Ingamename booked class // giving confirmation output with coin check and seat check if enough seats are available for booking.
+--Command: "/pasmaster [flightnumber]"
+--Function: Enables the Pursor/flight attendant to sea which player which ticket has
+-Flight Hosting
+--Command: "/hostflight [Airline] [flightnumber] [fleet] [Boarding time in z]"
+--Function: Creates a new table in flights.db and creates lines with passenger information. The columns will be created for every passenger.
