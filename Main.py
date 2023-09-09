@@ -25,4 +25,4 @@ async def hostflight(ctx, flightnumber, dest, sched, Terminal, Gate):
 async def flightinfo(ctx, arg):
     await flightmanager.flightinfo(ctx, arg)
 
-bot.run("MTE0ODcxODEwOTM1NjczMjQxNg.GdAdVb.RbDGhxdasWOyAiNSome1fW4BTiglWaL5doloaI")
+bot.run("Notyourproblem!")
