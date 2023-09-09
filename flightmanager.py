@@ -22,14 +22,16 @@ async def flightinfo(ctx, arg):
     with open("flights.json", "r") as g:
         flights = json.load(g)
     j = flights[arg]
-    Destination = j["dest"]
+    destination = j["dest"]
     scheduled = j["sched"]
-    Terminal = j["terminal"]
-    Gate = j["gate"]
-    await ctx.send(f"```txt\n\
+    terminal = j["terminal"]
+    gate = j["gate"]
+    flightembed = discord.Embed(title="Flightinformation", color=0x285ff4)
+    flightembed.add_field(name="", value=f"`txt\n\
                     _________________________________\n\
                    | Flight | Dest | sched | T | Gt |\n\
                    |--------------------------------|\n\
-                   | {arg} | {Destination} | {scheduled}z | {Terminal} | {Gate} |\n\
+                   | {arg} | {destination} | {scheduled}z | {terminal} | {gate} |\n\
                    ---------------------------------\n\
-                   ```")
+                   `", inline=False)
+    await ctx.send(embed=flightembed)
